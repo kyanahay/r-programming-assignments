@@ -6,9 +6,9 @@ data("iris")
 head(iris)
 str(iris)
 
-# -------------------------
+
 # Base R Graphics
-# -------------------------
+
 
 # Scatter plot
 plot(iris$Sepal.Length, iris$Petal.Length,
@@ -30,9 +30,9 @@ hist(iris$Sepal.Width,
      col  = "lightblue",
      border = "white")
 
-# -------------------------
+
 # Lattice Graphics
-# -------------------------
+
 library(lattice)
 
 # Conditioned scatter plot
@@ -52,9 +52,9 @@ bwplot(Sepal.Width ~ Species,
        ylab = "Sepal Width",
        col = "darkgreen")
 
-# -------------------------
+
 # ggplot2 Graphics
-# -------------------------
+
 install.packages("ggplot2")
 library(ggplot2)
 

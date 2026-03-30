@@ -1,0 +1,17 @@
+Package: Friedman
+Title: Tools for Simple Financial and Data Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person("Kyana", "Hay", email = "kmhay@usf.edu", role = c("aut", "cre"))
+Description:
+    Friedman is an R package designed to support simple financial and
+    data analysis workflows. The package will provide functions for
+    cleaning data, summarizing results, and creating basic visualizations
+    for students and early-stage analysts.
+Depends: 
+    R (>= 3.1.2)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

@@ -1,0 +1,52 @@
+---
+title: "My R Markdown Primer"
+author: "Kyana Hay"
+date: "2026-04-12"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+R Markdown is a tool that allows you to combine written text, mathematical expressions, and R code in a single document. This makes it easier to create reports that are both clear and reproducible. Instead of copying results into a separate file, everything updates automatically when the document is knitted.
+
+## Narrative Section
+
+One of the main benefits of R Markdown is that it improves organization. You can explain what you are doing in plain language, then directly include the code that generates your results. This makes your work easier to understand and verify.
+
+For example, inline math looks like this: $\alpha + \beta = \gamma$
+
+A displayed equation looks like:
+
+$$
+a^2 + b^2 = c^2
+$$
+
+## Code Chunk 1: Summary Statistics
+
+```{r}
+data(mtcars)
+summary(mtcars)
+```
+
+This output shows summary statistics for the dataset, including the mean, median, and range of each variable.
+
+## Code Chunk 2: Plot
+```{r}
+plot(mtcars$wt, mtcars$mpg,
+     main = "Weight vs MPG",
+     xlab = "Weight",
+     ylab = "Miles per Gallon")
+```
+
+This plot shows the relationship between car weight and fuel efficiency. Heavier cars tend to have lower miles per gallon.
+
+## Reflection
+
+Using R Markdown was more efficient than writing a regular report because everything is in one place. I learned how Markdown formatting works and how LaTeX can be used to display equations clearly.
+
+One challenge I faced was making sure the document knitted correctly. Small mistakes in code or formatting can cause errors. However, once it worked, the final HTML output looked clean and professional compared to the source file.
+
+Overall, R Markdown is useful because it combines writing and coding, making analysis easier to reproduce and share.
